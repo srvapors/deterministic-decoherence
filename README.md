@@ -3,7 +3,7 @@ repository for python code for paper
 
 
 
-{import numpy as np
+"import numpy as np
 import matplotlib.pyplot as plt
 
 # =====================================================================
@@ -111,4 +111,4 @@ ax2.grid(True, alpha=0.3)
 
 plt.suptitle('Measurement as Mechanical Noise (Lindblad Decoherence)', fontsize=18, y=1.05)
 plt.tight_layout()
-plt.show()}
+plt.show()"
