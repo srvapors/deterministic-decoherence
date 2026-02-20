@@ -3,13 +3,13 @@ repository for python code for paper
 
 
 
-"import numpy as np
+import numpy as np
 import matplotlib.pyplot as plt
 
-# =====================================================================
+# ======================================
 # DETERMINISTIC DECOHERENCE SIMULATOR V4 (1D Double Slit)
 # Includes Coherence Decay (Purity) Tracking
-# =====================================================================
+# ======================================
 
 N = 256                 
 L = 20.0                
@@ -81,9 +81,9 @@ prob_5, pur_5 = run_simulation(5.0)
 print("Running Hard Measurement (High Noise)...")
 prob_50, pur_50 = run_simulation(50.0)
 
-# =====================================================================
+# ======================================
 # PLOT THE RESULTS (2 PANELS)
-# =====================================================================
+# ======================================
 plt.style.use('dark_background')
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
 time_array = np.linspace(0, steps*dt, steps)
@@ -111,4 +111,4 @@ ax2.grid(True, alpha=0.3)
 
 plt.suptitle('Measurement as Mechanical Noise (Lindblad Decoherence)', fontsize=18, y=1.05)
 plt.tight_layout()
-plt.show()"
+plt.show()
